@@ -412,9 +412,9 @@
     <!--ESG Modifiers-->
     <Modifier TargetProperty="FlakDamage" Operation="Percent" Value="$(FlotillaFlakDamageModifier)" Path="ClassFlotilla/ClassShip//ClassModuleWeapon,ClassModuleWeaponKinetic"/>
     <Modifier TargetProperty="Damage" Operation="Percent" Value="$(FlotillaFlakDamageModifier)" Path="ClassFlotilla/ClassShip//ClassModuleWeapon,ClassModuleWeaponFlack"/>
-    <Modifier TargetProperty="LongRangePenalty" Operation="Addition" Value="$(FlotillaFlakLongRangePenalty)" Path="ClassFlotilla/ClassShip/ClassModuleWeapon,ClassModuleWeaponFlack"/>
-    <Modifier TargetProperty="MediumRangePenalty" Operation="Addition" Value="$(FlotillaFlakMediumRangePenalty)" Path="ClassFlotilla/ClassShip/ClassModuleWeapon,ClassModuleWeaponFlack"/>
-    <Modifier TargetProperty="ShortRangePenalty" Operation="Addition" Value="$(FlotillaFlakShortRangePenalty)" Path="ClassFlotilla/ClassShip/ClassModuleWeapon,ClassModuleWeaponFlack"/>
+    <Modifier TargetProperty="LongRangePenalty" Operation="Addition" Value="$(FlotillaFlakLongRangePenalty)" Path="ClassFlotilla/ClassShip//ClassModuleWeapon,ClassModuleWeaponFlack"/>
+    <Modifier TargetProperty="MediumRangePenalty" Operation="Addition" Value="$(FlotillaFlakMediumRangePenalty)" Path="ClassFlotilla/ClassShip//ClassModuleWeapon,ClassModuleWeaponFlack"/>
+    <Modifier TargetProperty="ShortRangePenalty" Operation="Addition" Value="$(FlotillaFlakShortRangePenalty)" Path="ClassFlotilla/ClassShip//ClassModuleWeapon,ClassModuleWeaponFlack"/>
     <Modifier TargetProperty="ManpowerDamageOverTime" Operation="Percent" Value="$(FlotillaManpowerDamageOverTimeIncrease)" Path="ClassFlotilla/ClassShip"/>
     <Modifier TargetProperty="EMPWeaponDefense" Operation="Addition" Value="$(EMPFlotillaDefense)" Path="ClassFlotilla/ClassShip"/>
     <Modifier TargetProperty="EMPShieldDefense" Operation="Addition" Value="$(EMPFlotillaDefense)" Path="ClassFlotilla/ClassShip"/>

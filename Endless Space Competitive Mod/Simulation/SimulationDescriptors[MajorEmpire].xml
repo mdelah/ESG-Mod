@@ -453,7 +453,7 @@
 
     <Modifier TargetProperty="SystemObedience" Operation="Addition" Value="$(Obedience)" Path="ClassEmpire/ClassColonizedStarSystem"/>
 
-    <Modifier TargetProperty="AntivisionStrength" Operation="Addition" Value="$(ColonyBaseAntivisionStrength)" Path="ClassEmpire/ClassColonizedStarSystem"/>
+    <Modifier TargetProperty="AntiVisionStrength" Operation="Addition" Value="$(ColonyBaseAntivisionStrength)" Path="ClassEmpire/ClassColonizedStarSystem"/>
 
     <!-- Gui Empire Happiness-->
     <BinaryModifier TargetProperty="GUIStarSystemsHappinessAvg" Operation="Force" Left="$(GUIStarSystemsHappinessSum)" BinaryOperation="Division" Right="$(GUIStarSystemsPopulationSum)" Priority="100"/>

@@ -137,7 +137,7 @@
 
   <SimulationDescriptor Name="EncounterShipTemporaryCooldownReductionPercent" Type="EncounterShipTemporaryCooldownReductionPercent">
     <Modifier TargetProperty="Cooldown"           Operation="Percent"   Value="$(CooldownReductionPercentFromOpponent)" Path="ClassShip//ClassModuleWeapon" TooltipHidden="true"/>
-    <Modifier TargetProperty="CooldownVariation"  Operation="Percent"   Value="$(CooldownReductionPercentFromOpponent)" Path="ClassGroup//ClassModuleWeapon,ClassModuleWeaponMissileSwarm" TooltipHidden="true"/>
+    <Modifier TargetProperty="CooldownVariation"  Operation="Percent"   Value="$(CooldownReductionPercentFromOpponent)" Path="ClassShip//ClassModuleWeapon,ClassModuleWeaponMissileSwarm" TooltipHidden="true"/>
   </SimulationDescriptor>
 
   <!-- Turtle -->
@@ -407,7 +407,9 @@
 
   <!-- Coilgun Armor Destruction -->
   <SimulationDescriptor Name="EncounterShipTemporaryArmorDestructionAccuracyPercent" Type="EncounterShipTemporaryArmorDestructionAccuracyPercent">
+    <!--
     <Modifier TargetProperty="HullPlatingAbsorptionDebuffDynamic"   Operation="Addition"   Value="$(ArmorDestructionDynamicFromOpponent)"  Path="ClassShip" TooltipHidden="true"/>
+    -->
   </SimulationDescriptor>
 
   <SimulationDescriptor Name="EncounterShipTemporaryArmorDestructionAccuracyFlat" Type="EncounterShipTemporaryArmorDestructionAccuracyPercent">

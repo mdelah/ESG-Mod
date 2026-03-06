@@ -8,7 +8,7 @@
 
 	<!-- Asteroid Field -->
 	<SimulationDescriptor Name="ArenaEffectSpecialNodeAsteroidField" Type="ArenaEffect">
-		<BinaryModifier TargetProperty="Accuracy"                   Operation="Percent"  Left="-0.75" BinaryOperation="Multiplication" Right="$(IsntImmuneToSpecialNodes)" Path="ClassGroup//ClassSalvo,ShortRange"/>
+		<BinaryModifier TargetProperty="Accuracy"                   Operation="Percent"  Left="-0.75" BinaryOperation="Multiplication" Right="$(IsntImmuneToSpecialNodes)" Path="ClassGroup//ClassSalvo,ShortRange" SearchValueFromPath="true"/>
 
 		<Modifier TargetProperty="OpponentRecyclingStrategic1PerCP" Operation="Addition" Value="2" Path="ClassGroup"/>
 		<Modifier TargetProperty="OpponentRecyclingStrategic2PerCP" Operation="Addition" Value="2" Path="ClassGroup"/>
@@ -30,8 +30,8 @@
 
 	<!-- Nebula Clouds -->
 	<SimulationDescriptor Name="ArenaEffectSpecialNodeSpaceClouds"   Type="ArenaEffect">
-		<BinaryModifier TargetProperty="Accuracy"               Operation="Percent"   Left="-0.5"  BinaryOperation="Multiplication" Right="$(IsntImmuneToSpecialNodes)"  Path="ClassGroup//ClassSalvo,LongRange"/>
-		<BinaryModifier TargetProperty="Accuracy"               Operation="Percent"   Left="-0.25" BinaryOperation="Multiplication" Right="$(IsntImmuneToSpecialNodes)" Path="ClassGroup//ClassSalvo,MediumRange"/>
+		<BinaryModifier TargetProperty="Accuracy"               Operation="Percent"   Left="-0.5"  BinaryOperation="Multiplication" Right="$(IsntImmuneToSpecialNodes)"  Path="ClassGroup//ClassSalvo,LongRange" SearchValueFromPath="true"/>
+		<BinaryModifier TargetProperty="Accuracy"               Operation="Percent"   Left="-0.25" BinaryOperation="Multiplication" Right="$(IsntImmuneToSpecialNodes)" Path="ClassGroup//ClassSalvo,MediumRange" SearchValueFromPath="true"/>
 		<Modifier TargetProperty="Evasion"                      Operation="Addition"  Value="0.2"   Path="FAKE//ClassShip"/>
 		<Modifier TargetProperty="Evasion"                      Operation="Addition"  Value="0.4"   Path="ClassGroup//ClassShip" TooltipHidden="true"/>
 	</SimulationDescriptor>

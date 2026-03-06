@@ -41,7 +41,7 @@
 
   <SimulationDescriptor Name="EmpireImprovementQuestUnitedEmpire09" Type="EmpireImprovement">
     <Modifier TargetProperty="NetEmpireResearch" Operation="Percent" Value="0.15" Path="ClassEmpire" Priority="10"/>
-    <Modifier TargetProperty="AdditionalOpponentRecyclingSciencePerCP" Operation="Addition" Value="100" Path="ClassEmpire"/>
+    <Modifier TargetProperty="AdditionalOpponentRecyclingSciencePerCP" Operation="Addition" Value="100" Path="FAKEFORGUI/ClassEmpire"/>
     <Modifier TargetProperty="AdditionalOpponentRecyclingSciencePerCP" Operation="Addition" Value="100" Path="../ClassEmpire/ClassGarrisonFleet/ClassShip" TooltipHidden="true"/>
   </SimulationDescriptor>
 
@@ -173,12 +173,12 @@
   </SimulationDescriptor>
 
   <SimulationDescriptor Name="EmpireImprovementQuestCravers05" Type="EmpireImprovement">
-    <Modifier TargetProperty="AdditionalOpponentRecyclingDustPerCP" Operation="Addition" Value="75" Path="ClassEmpire"/>
+    <Modifier TargetProperty="AdditionalOpponentRecyclingDustPerCP" Operation="Addition" Value="75" Path="FAKEFORGUI/ClassEmpire"/>
     <Modifier TargetProperty="AdditionalOpponentRecyclingDustPerCP" Operation="Addition" Value="75" Path="../ClassEmpire/ClassGarrisonFleet/ClassShip" TooltipHidden="true"/>
   </SimulationDescriptor>
 
   <SimulationDescriptor Name="EmpireImprovementQuestCravers06" Type="EmpireImprovement">
-    <Modifier TargetProperty="AdditionalOpponentRecyclingSciencePerCP" Operation="Addition" Value="50" Path="ClassEmpire"/>
+    <Modifier TargetProperty="AdditionalOpponentRecyclingSciencePerCP" Operation="Addition" Value="50" Path="FAKEFORGUI/ClassEmpire"/>
     <Modifier TargetProperty="AdditionalOpponentRecyclingSciencePerCP" Operation="Addition" Value="50" Path="../ClassEmpire/ClassGarrisonFleet/ClassShip" TooltipHidden="true"/>
   </SimulationDescriptor>
 
@@ -343,7 +343,7 @@
 
   <!--Lumeris Quest Reward: Dust recycling -->
   <SimulationDescriptor Name="EmpireImprovementVenetianQuestDustRecycling" Type="EmpireImprovement">
-    <Modifier TargetProperty="AdditionalOpponentRecyclingDustPerCP"          Operation="Addition"     Value="100"  Path="ClassEmpire"/>
+    <Modifier TargetProperty="AdditionalOpponentRecyclingDustPerCP"          Operation="Addition"     Value="100"  Path="FAKEFORGUI/ClassEmpire"/>
     <Modifier TargetProperty="AdditionalOpponentRecyclingDustPerCP"          Operation="Addition"     Value="100"  Path="../ClassEmpire/ClassGarrisonFleet/ClassShip" TooltipHidden="true"/>
   </SimulationDescriptor>
 
@@ -509,19 +509,21 @@
 
   <!-- Excess food conversion -->
   <SimulationDescriptor Name="EmpireImprovementWastedFoodConversiontoDust1" Type="EmpireImprovement">
+    <!--
     <Modifier TargetProperty="CanConvertWastedFoodtoDust1" Operation="Addition" Value="1" Path="../ClassEmpire/ClassColonizedStarSystem" TooltipOverride="%EmpireImprovementWastedFoodConversiontoDust"/>
+    -->
   </SimulationDescriptor>
   <SimulationDescriptor Name="EmpireImprovementWastedFoodConversiontoDust2" Type="EmpireImprovement">
-    <Modifier TargetProperty="CanConvertWastedFoodtoDust2" Operation="Addition" Value="1" Path="../ClassEmpire/ClassColonizedStarSystem" TooltipOverride="%EmpireImprovementWastedFoodConversiontoDust"/>
+    <!-- <Modifier TargetProperty="CanConvertWastedFoodtoDust2" Operation="Addition" Value="1" Path="../ClassEmpire/ClassColonizedStarSystem" TooltipOverride="%EmpireImprovementWastedFoodConversiontoDust"/>-->
   </SimulationDescriptor>
   <SimulationDescriptor Name="EmpireImprovementWastedFoodConversiontoMP1" Type="EmpireImprovement">
-    <Modifier TargetProperty="CanConvertWastedFoodtoMP1" Operation="Addition" Value="1" Path="../ClassEmpire/ClassColonizedStarSystem" TooltipOverride="%EmpireImprovementWastedFoodConversiontoMP"/>
+    <!--<Modifier TargetProperty="CanConvertWastedFoodtoMP1" Operation="Addition" Value="1" Path="../ClassEmpire/ClassColonizedStarSystem" TooltipOverride="%EmpireImprovementWastedFoodConversiontoMP"/>-->
   </SimulationDescriptor>
   <SimulationDescriptor Name="EmpireImprovementWastedFoodConversiontoMP2" Type="EmpireImprovement">
-    <Modifier TargetProperty="CanConvertWastedFoodtoMP2" Operation="Addition" Value="1" Path="../ClassEmpire/ClassColonizedStarSystem" TooltipOverride="%EmpireImprovementWastedFoodConversiontoMP"/>
+    <!--<Modifier TargetProperty="CanConvertWastedFoodtoMP2" Operation="Addition" Value="1" Path="../ClassEmpire/ClassColonizedStarSystem" TooltipOverride="%EmpireImprovementWastedFoodConversiontoMP"/>-->
   </SimulationDescriptor>
   <SimulationDescriptor Name="EmpireImprovementWastedFoodConversiontoApproval" Type="EmpireImprovement">
-    <Modifier TargetProperty="CanConvertWastedFoodtoApproval" Operation="Addition" Value="1" Path="../ClassEmpire/ClassColonizedStarSystem" TooltipOverride="%EmpireImprovementWastedFoodConversiontoApproval"/>
+    <!--<Modifier TargetProperty="CanConvertWastedFoodtoApproval" Operation="Addition" Value="1" Path="../ClassEmpire/ClassColonizedStarSystem" TooltipOverride="%EmpireImprovementWastedFoodConversiontoApproval"/>-->
   </SimulationDescriptor>
 
   <!--Law unlocks-->
@@ -711,7 +713,9 @@
 
   <!-- Nakalim Quest -->
   <SimulationDescriptor Name="EmpireImprovementTemplarsFinalQuest1" Type="EmpireImprovement">
+    <!--
     <Modifier TargetProperty="TempleMalus" Operation="Force" Value="1" Path="ClassEmpire/ClassColonizedStarSystem/ClassColonizedPlanet/ClassImprovement" TooltipOverride="%EmpireImprovementTemplarsFinalQuest1TooltipEffect"/>
+    -->
   </SimulationDescriptor>
 
 

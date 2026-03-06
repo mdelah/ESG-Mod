@@ -58,12 +58,14 @@
 
   <!-- Open Senate -->
   <SimulationDescriptor Name="FactionTraitOpenSenate" Type="FactionTrait">
-    <Modifier TargetProperty="BonusNumberOfSenatorSlots" Operation="Force" Value="1" Path="ClassEmpire/ClassSenate" TooltipHidden="true"/>
+    <!--<Modifier TargetProperty="BonusNumberOfSenatorSlots" Operation="Force" Value="1" Path="ClassEmpire/ClassSenate" TooltipHidden="true"/>-->
   </SimulationDescriptor>
 
   <!-- Expanded Law -->
   <SimulationDescriptor Name="FactionTraitExpandedLaw" Type="FactionTrait">
+    <!--
     <Modifier TargetProperty="BonusNumberOfLawSlots" Operation="Force" Value="1" Path="ClassEmpire/ClassSenate" TooltipHidden="true"/>
+    -->
   </SimulationDescriptor>
 
   <!-- Economy -->
@@ -494,13 +496,13 @@
   <!-- Higher Pop Cost -->
   <SimulationDescriptor Name="FactionTraitHigherPopCostI" Type="FactionTrait">
     <Modifier TargetProperty="BaseFoodRequiredToGrowPop" Operation="Addition" Value="100" Path="../ClassEmpire" TooltipHidden="true"/>
-    <BinaryModifier TargetProperty="SystemGrowthStockRequiredForNextPop" Operation="Addition" Left="100" BinaryOperation="Multiplication" Right="$(Population)" Path="../ClassEmpire/ClassColonizedStarSystem" SearchValueFromPath="true" TooltipHidden="true" Priority="4"/>
-    <BinaryModifier TargetProperty="SystemGrowthStockRequiredForNextPop" Operation="Addition" Left="100" BinaryOperation="Multiplication" Right="2"             Path="../ClassEmpire/ClassColonizedStarSystem" SearchValueFromPath="true" TooltipHidden="true" Priority="4"/>
+    <!--<BinaryModifier TargetProperty="SystemGrowthStockRequiredForNextPop" Operation="Addition" Left="100" BinaryOperation="Multiplication" Right="$(Population)" Path="../ClassEmpire/ClassColonizedStarSystem" SearchValueFromPath="true" TooltipHidden="true" Priority="4"/>
+    <BinaryModifier TargetProperty="SystemGrowthStockRequiredForNextPop" Operation="Addition" Left="100" BinaryOperation="Multiplication" Right="2"             Path="../ClassEmpire/ClassColonizedStarSystem" SearchValueFromPath="true" TooltipHidden="true" Priority="4"/>-->
   </SimulationDescriptor>
   <SimulationDescriptor Name="FactionTraitHigherPopCostII" Type="FactionTrait">
     <Modifier TargetProperty="BaseFoodRequiredToGrowPop" Operation="Addition" Value="200" Path="../ClassEmpire" TooltipHidden="true"/>
-    <BinaryModifier TargetProperty="SystemGrowthStockRequiredForNextPop" Operation="Addition" Left="200" BinaryOperation="Multiplication" Right="$(Population)" Path="../ClassEmpire/ClassColonizedStarSystem" SearchValueFromPath="true" TooltipHidden="true" Priority="4"/>
-    <BinaryModifier TargetProperty="SystemGrowthStockRequiredForNextPop" Operation="Addition" Left="200" BinaryOperation="Multiplication" Right="2"             Path="../ClassEmpire/ClassColonizedStarSystem" SearchValueFromPath="true" TooltipHidden="true" Priority="4"/>
+    <!--<BinaryModifier TargetProperty="SystemGrowthStockRequiredForNextPop" Operation="Addition" Left="200" BinaryOperation="Multiplication" Right="$(Population)" Path="../ClassEmpire/ClassColonizedStarSystem" SearchValueFromPath="true" TooltipHidden="true" Priority="4"/>
+    <BinaryModifier TargetProperty="SystemGrowthStockRequiredForNextPop" Operation="Addition" Left="200" BinaryOperation="Multiplication" Right="2"             Path="../ClassEmpire/ClassColonizedStarSystem" SearchValueFromPath="true" TooltipHidden="true" Priority="4"/>-->
   </SimulationDescriptor>
 
   <!-- Higher Terraform Cost (for Cravers, to offset benefits of cheaper terraforming) -->
@@ -516,7 +518,7 @@
 
   <!-- Empire Points per CP Destroyed -->
   <SimulationDescriptor Name="FactionTraitEmpirePointPerCPDestroyed" Type="FactionTrait">
-    <Modifier TargetProperty="AdditionalOpponentRecyclingEmpirePointPerCP"          Operation="Addition"     Value="10"  Path="ClassEmpire" TooltipHidden="true"/>
+    <Modifier TargetProperty="AdditionalOpponentRecyclingEmpirePointPerCP"          Operation="Addition"     Value="10"  Path="FAKEFORGUI/ClassEmpire" TooltipHidden="true"/>
     <Modifier TargetProperty="AdditionalOpponentRecyclingEmpirePointPerCP"          Operation="Addition"     Value="10"  Path="../ClassEmpire/ClassGarrisonFleet/ClassShip" TooltipHidden="true"/>
   </SimulationDescriptor>
 
@@ -613,7 +615,7 @@
 
   <!-- War Desecration -->
   <SimulationDescriptor Name="FactionTraitWarDesecration" Type="FactionTrait">
-    <Modifier TargetProperty="OpponentRecyclingManpowerPerCP"          Operation="Addition"     Value="20"  Path="ClassEmpire"/>
+    <Modifier TargetProperty="OpponentRecyclingManpowerPerCP"          Operation="Addition"     Value="20"  Path="FAKEFORGUI/ClassEmpire"/>
     <Modifier TargetProperty="OpponentRecyclingManpowerPerCP"          Operation="Addition"     Value="20"  Path="ClassEmpire//ClassShip" TooltipHidden="true"/>
   </SimulationDescriptor>
 
@@ -914,19 +916,19 @@
 
   <!-- Cheat CP -->
   <SimulationDescriptor Name="FactionTraitCheatCP1" Type="FactionTrait">
-    <Modifier TargetProperty="MaximumCommandPoints" Operation="Addition" Value="5" Path="ClassEmpire/ClassColonizedStarSystem"/>
+    <Modifier TargetProperty="MaximumCommandPoints" Operation="Addition" Value="5" Path="ClassEmpire"/>
   </SimulationDescriptor>
   <SimulationDescriptor Name="FactionTraitCheatCP2" Type="FactionTrait">
-    <Modifier TargetProperty="MaximumCommandPoints" Operation="Addition" Value="10" Path="ClassEmpire/ClassColonizedStarSystem"/>
+    <Modifier TargetProperty="MaximumCommandPoints" Operation="Addition" Value="10" Path="ClassEmpire"/>
   </SimulationDescriptor>
   <SimulationDescriptor Name="FactionTraitCheatCP3" Type="FactionTrait">
-    <Modifier TargetProperty="MaximumCommandPoints" Operation="Addition" Value="50" Path="ClassEmpire/ClassColonizedStarSystem"/>
+    <Modifier TargetProperty="MaximumCommandPoints" Operation="Addition" Value="50" Path="ClassEmpire"/>
   </SimulationDescriptor>
   <SimulationDescriptor Name="FactionTraitCheatCP4" Type="FactionTrait">
-    <Modifier TargetProperty="MaximumCommandPoints" Operation="Addition" Value="100" Path="ClassEmpire/ClassColonizedStarSystem"/>
+    <Modifier TargetProperty="MaximumCommandPoints" Operation="Addition" Value="100" Path="ClassEmpire"/>
   </SimulationDescriptor>
   <SimulationDescriptor Name="FactionTraitCheatCP5" Type="FactionTrait">
-    <Modifier TargetProperty="MaximumCommandPoints" Operation="Addition" Value="500" Path="ClassEmpire/ClassColonizedStarSystem"/>
+    <Modifier TargetProperty="MaximumCommandPoints" Operation="Addition" Value="500" Path="ClassEmpire"/>
   </SimulationDescriptor>
 
   <!-- Cheat Vision -->

@@ -23,7 +23,7 @@
 
   <!-- Deuyivans -->
   <SimulationDescriptor Name="LawEffectP00L14-PopulationCollectionDeuyivans" Type="LawEffect">
-    <Modifier TargetProperty="TechnologyCostQuadrantEmpireDevelopmentMultiplier" Operation="Addition" Value="-0.3" Path="../ClassEmpire"/>
+    <Modifier TargetProperty="TechnologyCostQuadrantEmpireDevelopmentMultiplier" Operation="Addition" Value="-0.3" Path="../FAKEFORGUI/ClassEmpire"/>
     <Modifier TargetProperty="TechnologyCostQuadrantEmpireDevelopmentMultiplier" Operation="Addition" Value="-0.3" Path="../ClassEmpire/ClassResearch" TooltipHidden="true"/>
     <Modifier TargetProperty="DemocracyLawsDiversityHasNeutral" Operation="Addition" Value="1" Path="../ClassEmpire" TooltipHidden="true"/>
   </SimulationDescriptor>

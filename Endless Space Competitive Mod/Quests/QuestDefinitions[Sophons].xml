@@ -657,7 +657,7 @@
       <Var VarName="$Marker02" IsGlobal="true"/>
       <DroplistVar VarName="$FleetToSpawn01" Droplist="ENFERShip01"/>
       <Var VarName="$SpawnedFleet01"/>
-      <Var VarName="$GUID01" IsGlobal="true"/>
+      <Var VarName="$GUID01Sophons" IsGlobal="true"/>
       <Var VarName="$NoBattle" StringValue="CannotFight"/>
       <Var VarName="$StayInFleet" StringValue="DisbandOnlyGarrison"/>
       <Var VarName="$ENFERfleet" IsGlobal="true"/>
@@ -698,10 +698,10 @@
                 <Input_Empire VarName="$CurrentEmpire"/>
                 <Input_Locations VarName="$PlaceToBe"/>
                 <Input_DroppableFleet VarName="$FleetToSpawn01"/>
-                <Output_FleetGUIDs VarName="$GUID01"/>
+                <Output_FleetGUIDs VarName="$GUID01Sophons"/>
               </Action_SpawnFleets>
               <Decorator_EntityCreated>
-                <Input_GUID VarName="$GUID01"/>
+                <Input_GUID VarName="$GUID01Sophons"/>
                 <Output_Entity VarName="$ENFERfleet"/>
               </Decorator_EntityCreated>
               <Action_ApplyDescriptor>
@@ -756,7 +756,7 @@
       <Var IsGlobal="true" VarName="$PlaceToBe"/>
       <DroplistVar VarName="$FleetToSpawn01" Droplist="ENFERShip01"/>
       <Var VarName="$SpawnedFleet01"/>
-      <Var VarName="$GUID01" IsGlobal="true"/>
+      <Var VarName="$GUID01Sophons" IsGlobal="true"/>
       <Var VarName="$Marker01"/>
       <Var IsGlobal="true" VarName="$Marker02"/>
       <Var VarName="$NoBattle" StringValue="CannotFight"/>
@@ -796,10 +796,10 @@
                 <Input_Empire VarName="$CurrentEmpire"/>
                 <Input_Locations VarName="$PlaceToBe"/>
                 <Input_DroppableFleet VarName="$FleetToSpawn01"/>
-                <Output_FleetGUIDs VarName="$GUID01"/>
+                <Output_FleetGUIDs VarName="$GUID01Sophons"/>
               </Action_SpawnFleets>
               <Decorator_EntityCreated>
-                <Input_GUID VarName="$GUID01"/>
+                <Input_GUID VarName="$GUID01Sophons"/>
                 <Output_Entity VarName="$ENFERfleet"/>
               </Decorator_EntityCreated>
               <Action_ApplyDescriptor>
@@ -855,7 +855,7 @@
         <From Source="$ColonizedSystem.$Hangar"/>
       </Var>
       <Var VarName="$ENFERfleet" IsGlobal="true"/>
-      <Var VarName="$GUID01" IsGlobal="true"/>
+      <Var VarName="$GUID01Sophons" IsGlobal="true"/>
 
       <Var VarName="$Module01" StringValue="ModuleExplorationQuestSophons"/>
       <Var VarName="$Amount" IntValue="1"/>
@@ -885,7 +885,7 @@
                 <Sequence>
                   <Decorator_ShipDisbanded>
                     <Input_Hangars VarName="$ColonizedSystemHangar"/>
-                    <Input_FleetGUID VarName="$GUID01"/>
+                    <Input_FleetGUID VarName="$GUID01Sophons"/>
                     <Input_ShipsInHangarsCount VarName="$Amount"/>
                   </Decorator_ShipDisbanded>
                 </Sequence>

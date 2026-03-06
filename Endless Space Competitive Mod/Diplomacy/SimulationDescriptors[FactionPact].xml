@@ -56,7 +56,7 @@
     <Property Name="FactionPactStepValue"   BaseValue="0" />
     <BinaryModifier TargetProperty="FactionPactStepValue"   Operation="Force"       Left="0.3"                            BinaryOperation="Division"          Right="$(FactionPactDuration)"  Priority="3" TooltipHidden="true" />
     <BinaryModifier TargetProperty="FactionPactBonusValue"  Operation="Addition"    Left="$(FactionPactCurrentTurn)"    BinaryOperation="Multiplication"    Right="$(FactionPactStepValue)" Priority="4" TooltipHidden="true" />
-    <Modifier TargetProperty="ExperienceMultiplier"         Operation="Percent"    Value="$(FactionPactBonusValue)"    Path="ClassHero" Priority="5"/>
+    <Modifier TargetProperty="ExperienceMultiplier"         Operation="Percent"    Value="$(FactionPactBonusValue)"    Path="FAKEFORGUI/ClassHero" Priority="5"/>
     <Modifier TargetProperty="ExperienceMultiplier"         Operation="Percent"    Value="$(FactionPactBonusValue)"    Path="../ClassEmpire//ClassHero" TooltipHidden="true" Priority="5"/>
   </SimulationDescriptor>
 

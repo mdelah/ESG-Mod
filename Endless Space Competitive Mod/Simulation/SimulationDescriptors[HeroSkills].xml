@@ -137,8 +137,8 @@
     <BinaryModifier TargetProperty="PlanetDust" Operation="Addition" Left="2" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true" Path="ClassColonizedStarSystem/ClassColonizedPlanet,PlanetGameplayTypeTemperate"/>
     <BinaryModifier TargetProperty="SystemMoney" Operation="Addition" Left="10" BinaryOperation="Multiplication" Right="$(SystemLevel)" Path="ClassColonizedStarSystem" SearchValueFromPath="true"/>
     <!-- FEEDBACK FOR SCAN VIEW -->
-    <Modifier TargetProperty="BonusHeroSystemDust" Operation="Addition" Value="2" Path="ClassColonizedStarSystem/ClassColonizedPlanet" TooltipHidden="true"/>
-    <Modifier TargetProperty="BonusHeroSystemDust" Operation="Addition" Value="2" Path="ClassColonizedStarSystem/ClassColonizedPlanet,PlanetGameplayTypeTemperate" TooltipHidden="true"/>
+    <Modifier TargetProperty="BonusHeroPlanetDust" Operation="Addition" Value="2" Path="ClassColonizedStarSystem/ClassColonizedPlanet" TooltipHidden="true"/>
+    <Modifier TargetProperty="BonusHeroPlanetDust" Operation="Addition" Value="2" Path="ClassColonizedStarSystem/ClassColonizedPlanet,PlanetGameplayTypeTemperate" TooltipHidden="true"/>
     <BinaryModifier TargetProperty="BonusHeroSystemDust" Operation="Addition" Left="10" BinaryOperation="Multiplication" Right="$(SystemLevel)" Path="ClassColonizedStarSystem" SearchValueFromPath="true" TooltipHidden="true"/>
   </SimulationDescriptor>
   <SimulationDescriptor Name="HeroSkillSystem58_Dust_PerPlanetFlat_2" Type="HeroSkillSystem" IsSerializable="false">
@@ -146,8 +146,8 @@
     <BinaryModifier TargetProperty="PlanetDust" Operation="Addition" Left="4" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true" Path="ClassColonizedStarSystem/ClassColonizedPlanet,PlanetGameplayTypeTemperate"/>
     <BinaryModifier TargetProperty="SystemMoney" Operation="Addition" Left="20" BinaryOperation="Multiplication" Right="$(SystemLevel)" Path="ClassColonizedStarSystem" SearchValueFromPath="true"/>
     <!-- FEEDBACK FOR SCAN VIEW -->
-    <Modifier TargetProperty="BonusHeroSystemDust" Operation="Addition" Value="4" Path="ClassColonizedStarSystem/ClassColonizedPlanet" TooltipHidden="true"/>
-    <Modifier TargetProperty="BonusHeroSystemDust" Operation="Addition" Value="4" Path="ClassColonizedStarSystem/ClassColonizedPlanet,PlanetGameplayTypeTemperate" TooltipHidden="true"/>
+    <Modifier TargetProperty="BonusHeroPlanetDust" Operation="Addition" Value="4" Path="ClassColonizedStarSystem/ClassColonizedPlanet" TooltipHidden="true"/>
+    <Modifier TargetProperty="BonusHeroPlanetDust" Operation="Addition" Value="4" Path="ClassColonizedStarSystem/ClassColonizedPlanet,PlanetGameplayTypeTemperate" TooltipHidden="true"/>
     <BinaryModifier TargetProperty="BonusHeroSystemDust" Operation="Addition" Left="20" BinaryOperation="Multiplication" Right="$(SystemLevel)" Path="ClassColonizedStarSystem" SearchValueFromPath="true" TooltipHidden="true"/>
   </SimulationDescriptor>
 
@@ -602,7 +602,7 @@
   <SimulationDescriptor Name="HeroSkillSenator122_FIDSI_0" Type="HeroSkillSenator" IsSerializable="false">
     <Property Name="FIDSI_PerHeroLevel" BaseValue="0.02"/>
     <Modifier TargetProperty="FIDSI_PerHeroLevel" Operation="Multiplication" Value="$(SenatorSkillEffectDictatorshipMultiplier)" TooltipHidden="true"/>
-    <BinaryModifier TargetProperty="SystemFIDSIPercent" Operation="Addition" Left="$(FIDSI_PerHeroLevel)" BinaryOperation="Multiplication" Right="$(AllianceCount)" Path="../ClassEmpire/ClassColonizedStarSystem/ClassColonizedPlanet"/>
+    <BinaryModifier TargetProperty="SystemFIDSIPercent" Operation="Addition" Left="$(FIDSI_PerHeroLevel)" BinaryOperation="Multiplication" Right="$(AllianceCount)" Path="../ClassEmpire/ClassColonizedStarSystem"/>
   </SimulationDescriptor>
 
   <!-- ****************** -->
@@ -840,8 +840,10 @@
     <Modifier TargetProperty="PlanetIndustryFromSenatorSkill" Operation="Addition" Value="$(Industry_Perpop)" Path="../ClassEmpire/ClassColonizedStarSystem/ClassColonizedPlanet" TooltipHidden="true"/>
     <!--  FEEDBACK FOR SCAN VIEW  -->
     <Modifier TargetProperty="Industry_Perpop_Feedback" Operation="Multiplication" Value="$(SenatorSkillEffectDictatorshipMultiplier)" TooltipHidden="true"/>
-    <BinaryModifier TargetProperty="BonusHeroPlanetIndustry" Operation="Addition" Left="$(Industry_Perpop_Feedback)" BinaryOperation="Multiplication" Right="$(Population)" Path="../ClassEmpire/ClassColonizedStarSystem/ClassColonizedPlanet" TooltipHidden="true"/>
+    <Modifier TargetProperty="BonusHeroPlanetIndustryPerPop" Operation="Addition" Value="$(Industry_Perpop_Feedback)" Path="../ClassEmpire/ClassColonizedStarSystem/ClassColonizedPlanet" TooltipHidden="true"/>
   </SimulationDescriptor>
+
+
 
   <!-- *********************** -->
   <!-- TECHNOLOGIST SKILL TREE -->

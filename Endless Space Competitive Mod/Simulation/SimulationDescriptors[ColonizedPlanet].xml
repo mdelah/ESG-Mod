@@ -67,6 +67,11 @@
     <Property Name="BonusHeroPlanetDust"        BaseValue="0"/>
     <Property Name="BonusHeroPlanetScience"     BaseValue="0"/>
     <Property Name="BonusHeroPlanetPrestige"    BaseValue="0"/>
+    <Property Name="BonusHeroPlanetFoodPerPop"        BaseValue="0"/>
+    <Property Name="BonusHeroPlanetIndustryPerPop"    BaseValue="0"/>
+    <Property Name="BonusHeroPlanetDustPerPop"        BaseValue="0"/>
+    <Property Name="BonusHeroPlanetSciencePerPop"     BaseValue="0"/>
+    <Property Name="BonusHeroPlanetPrestigePerPop"    BaseValue="0"/>
 
     <Property Name="PlanetOutpostFood" MinValue="Negative"/>
     <Property Name="PlanetOutpostIndustry" MinValue="Negative"/>

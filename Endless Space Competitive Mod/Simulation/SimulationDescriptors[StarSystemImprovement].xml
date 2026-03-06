@@ -828,7 +828,7 @@
     <Modifier TargetProperty="GroundBattleRoundPopulationDestructionProbability"    Operation="Addition"   Value="-0.25"    Path="./ColonizedStarSystemStateColony,ClassColonizedStarSystem"/>
     <Modifier TargetProperty="GroundBattleDefenderManpowerLimit"                    Operation="Percent"    Value=".15"     Path="./ClassColonizedStarSystem"/>
     <Modifier TargetProperty="GroundBattleDefenderTroopsMaxHealthMultiplier"        Operation="Percent"    Value=".15"     Path="./ClassColonizedStarSystem"/>
-    <Modifier TargetProperty="GroundBattleBombardmentAttackerDamageReduction"       Operation="Subtraction" Value="0.25" />
+    <Modifier TargetProperty="GroundBattleBombardmentAttackerDamageReduction"       Operation="Subtraction" Value="0.25"   Path="./ClassColonizedStarSystem"/>
   </SimulationDescriptor>
 
   <SimulationDescriptor Name="StarSystemImprovementDefense3Unfallen" Type="StarSystemImprovement">
@@ -836,7 +836,7 @@
     <Modifier TargetProperty="GroundBattleRoundPopulationDestructionProbability"    Operation="Addition"   Value="-0.3"    Path="./ColonizedStarSystemStateColony,ClassColonizedStarSystem"/>
     <Modifier TargetProperty="GroundBattleDefenderManpowerLimit"                    Operation="Percent"    Value=".2"     Path="./ClassColonizedStarSystem"/>
     <Modifier TargetProperty="GroundBattleDefenderTroopsMaxHealthMultiplier"        Operation="Percent"    Value=".2"     Path="./ClassColonizedStarSystem"/>
-    <Modifier TargetProperty="GroundBattleBombardmentAttackerDamageReduction"       Operation="Subtraction" Value="0.25" />
+    <Modifier TargetProperty="GroundBattleBombardmentAttackerDamageReduction"       Operation="Subtraction" Value="0.25"  Path="./ClassColonizedStarSystem"/>
   </SimulationDescriptor>
 
   <SimulationDescriptor Name="StarSystemImprovementUniqueDefense1" Type="StarSystemImprovement">
@@ -925,7 +925,7 @@
   <!--  ###########################################################################  -->
   <SimulationDescriptor Name="StarSystemImprovementPropagandaPolitics01" Type="StarSystemImprovement">
     <Modifier TargetProperty="NetSystemProduction" Operation="Multiplication" Value="0" Path="ClassColonizedStarSystem"/>
-    <Modifier TargetProperty="DepositValue" Operation="Percent" Value="0.2" Path="ClassResourceDeposit,ResourceTypeStrategic"/>
+    <Modifier TargetProperty="DepositValue" Operation="Percent" Value="0.2" Path="FAKEFORGUI/ClassResourceDeposit,ResourceTypeStrategic"/>
     <!-- BS path for feedback -->
     <Modifier TargetProperty="DepositValue" Operation="Percent" Value="0.2" Path="ClassColonizedStarSystem/ClassColonizedPlanet/ClassResourceDeposit,ResourceTypeStrategic" TooltipHidden="true"/>
     <!-- Real path for effect -->

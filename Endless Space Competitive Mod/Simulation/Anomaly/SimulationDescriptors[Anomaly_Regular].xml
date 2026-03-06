@@ -135,7 +135,6 @@
     <Modifier TargetProperty="PlanetInitialIndustryPerPopulation" Operation="Addition" Value="1" Path="ClassPlanet" />
     <Modifier TargetProperty="PlanetInitialSciencePerPopulation" Operation="Addition" Value="2" Path="ClassPlanet" />
     <BinaryModifier TargetProperty="MaximumSystemManpower" Operation="Addition" Left="10" BinaryOperation="Multiplication" Right="$(Population)" Path="./ClassColonizedStarSystem"  />
-    <BinaryModifier TargetProperty="MaximumSystemManpower" Operation="Addition" Left="10" BinaryOperation="Multiplication" Right="$(Population)" Path="./ClassColonizedStarSystem/ClassColonizedPlanet" />
   </SimulationDescriptor>
 
   <!-- Dust Halo -->

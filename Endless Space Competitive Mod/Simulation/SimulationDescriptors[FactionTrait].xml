@@ -228,7 +228,7 @@
 
   <!-- Remnant Assimilation Trait -->
   <SimulationDescriptor Name="FactionTraitMinorWorldBuilders02" Type="FactionTraitMinor">
-    <Modifier TargetProperty="OpponentRecyclingDustPerCP" Operation="Addition" Value="5" Path="../ClassEmpire"/>
+    <Modifier TargetProperty="OpponentRecyclingDustPerCP" Operation="Addition" Value="5" Path="../FAKEFORGUI/ClassEmpire"/>
     <Modifier TargetProperty="OpponentRecyclingDustPerCP" Operation="Addition" Value="5" Path="../ClassEmpire/ClassGarrisonFleet/ClassShip" TooltipHidden="true"/>
     <Modifier TargetProperty="MinorTraitsAssimilated" Operation="Addition" Value="1" Path="ClassEmpire" TooltipHidden="true"/>
   </SimulationDescriptor>
@@ -344,7 +344,7 @@
   <SimulationDescriptor Name="FactionTraitMinorSoilHealers" Type="FactionTraitMinor">
     <BinaryModifier TargetProperty="SystemGrowth" Operation="Addition" Left="15" BinaryOperation="Multiplication" Right="$(OwnedMeagerPlanets)" SearchValueFromPath="true" Path="ClassEmpire/ClassColonizedStarSystem"/>
     <BinaryModifier TargetProperty="PlanetFIDSI" Operation="Addition" Left="$(Population)" BinaryOperation="Multiplication" Right="$(ReducedAnomalyCount)" SearchValueFromPath="true" Path="ClassEmpire/ClassColonizedStarSystem/ClassColonizedPlanet" TooltipHidden="true" />
-    <BinaryModifier TargetProperty="PlanetFIDSI" Operation="Addition" Left="1" BinaryOperation="Multiplication" Right="$(Population)" Path="ClassPlanet,PlanetWithReducedAnomaly" SearchValueFromPath="true"/>
+    <BinaryModifier TargetProperty="PlanetFIDSI" Operation="Addition" Left="1" BinaryOperation="Multiplication" Right="$(Population)" Path="FAKEFORGUI/ClassPlanet,PlanetWithReducedAnomaly" SearchValueFromPath="true"/>
     <Modifier TargetProperty="MinorTraitsAssimilated" Operation="Addition" Value="1" Path="ClassEmpire" TooltipHidden="true"/>
   </SimulationDescriptor>
 

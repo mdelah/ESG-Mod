@@ -94,8 +94,8 @@
 		<BinaryModifier TargetProperty="DemandMinPriceChangeFactor"	Operation="Addition"	Left="3"	BinaryOperation="Multiplication"	Right="$(ValueIncrementShip)"	Priority="-10"	Path="TradableSubCategoryShip/ClassTradable" SearchValueFromPath="true"/>
 		<BinaryModifier TargetProperty="PriceChangeFactor"			Operation="Addition"	Left="1"	BinaryOperation="Multiplication"	Right="$(ValueIncrementShip)"	Priority="-10"  Path="TradableSubCategoryShip/ClassTradable" SearchValueFromPath="true"/>
 
-		
-		<Modifier TargetProperty="MaximumQuantity"                          Operation="Addition"        Value="4999" Priority="-1"/>
+		<!-- MD FIXME added Path, might be incorrect -->
+		<Modifier TargetProperty="MaximumQuantity"                          Operation="Addition"        Value="4999" Priority="-1" Path="TradableSubCategoryShip/ClassTradable" />
 
 		<!-- Quantity bought & sold -->
 		<Modifier TargetProperty="QuantitySum"                              Operation="Addition"        Value="$(QuantityBoughtThisTurn)" Priority="-1"/>
@@ -211,7 +211,7 @@
 		<BinaryModifier TargetProperty="DemandMinPriceChangeFactor"	Operation="Addition"	Left="3"	BinaryOperation="Multiplication"	Right="$(ValueIncrementHero)"	Priority="-10"	Path="TradableSubCategoryHero/ClassTradable" SearchValueFromPath="true"/>
 		<BinaryModifier TargetProperty="PriceChangeFactor"		Operation="Addition"	Left="1"	BinaryOperation="Multiplication"	Right="$(ValueIncrementHero)"	Priority="-10"  Path="TradableSubCategoryHero/ClassTradable" SearchValueFromPath="true"/>
 		
-		<Modifier TargetProperty="MaximumQuantity"                          Operation="Addition"        Value="4999" Priority="-1"/>
+		<Modifier TargetProperty="MaximumQuantity"                          Operation="Addition"        Value="4999" Priority="-1" Path="TradableSubCategoryHero/ClassTradable"/>
 
 		<!-- Quantity bought & sold -->
 		<Modifier TargetProperty="QuantitySum"                              Operation="Addition"        Value="$(QuantityBoughtThisTurn)" Priority="-1"/>

@@ -16,6 +16,6 @@
   </TemporaryEffectDefinition>
 
   <!-- Don't fix this, it is intentionally like this -->
-  <TemporaryEffectDefinition Name="OnPirateBaseDestroyed" Category="AcademyRelationWithMajor">
+  <TemporaryEffectDefinition Name="OnPirateBaseDestroyed" Category="AcademyRelationWithMajor" Duration="0">
   </TemporaryEffectDefinition>
 </Datatable>

@@ -351,6 +351,7 @@
 
   <!--  Parasite affinity  -->
   <SimulationDescriptor Name="PopulationParasitedPlanet" Type="PopulationParasite">
+    <Property Name="ParasitedPopulationApprovalMalus" BaseValue="10"/>
     <Modifier TargetProperty="ParasitedPopulation" Operation="Addition" Value="$(PopulationCount)" Path="../ClassColonizedPlanet"/>
     <BinaryModifier TargetProperty="Happiness" Operation="Subtraction" Left="5" BinaryOperation="Multiplication" Right="$(PopulationCount)" Path="../ClassColonizedStarSystem"/>
     <Modifier TargetProperty="BonusPopulationFIDSPercent" Operation="Addition" Value="1" Path="FAKEFORGUI/./ClassPopulationPlanet"/>

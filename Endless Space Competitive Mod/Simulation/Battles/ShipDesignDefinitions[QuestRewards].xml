@@ -229,7 +229,6 @@
     <SlotBinding SlotName="SectionW.Defense01">
       <ModuleReference Name="ModuleDefenseHullPlating1"/>
     </SlotBinding>
-    <SimulationDescriptorReference Name="QuestShipCravers"/>
   </ShipDesignDefinition>
 
   <ShipDesignTemplateDefinition Name="HisshosReward_MediumAttacker">
@@ -290,7 +289,9 @@
       <TemplateModule Family="ShieldBase"         Weight="3"/>
     </TemplateSlotBinding>
 
+      <!--
     <PathPrerequisite Flags="Prerequisite,Edition,Discard">../ClassEmpire,QuestUnlockHisshoHunter</PathPrerequisite>
+    -->
   </ShipDesignTemplateDefinition>
 
 </Datatable>

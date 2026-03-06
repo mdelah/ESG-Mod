@@ -42,6 +42,7 @@
     <Property Name="HeroPolitics06" BaseValue="0"/>
 
     <Property Name="HeroRelics" BaseValue="0" MinValue="0"/>
+    <Property Name="AllianceCount" BaseValue="0" MinValue="0"/>
 
     <BinaryModifier TargetProperty="BonusesToApply" Operation="Addition" Left="0.05" BinaryOperation="Multiplication" Right="$(Level)"/>
     <BinaryModifier TargetProperty="Damage" Operation="Addition" Left="$(BonusesToApply)" BinaryOperation="Multiplication" Right="$(TriggerEmpireImprovementReligiousHoratio)" Path="./ClassGarrisonFleet/ClassShip,ShipRoleHero"/>

@@ -385,8 +385,9 @@
     <BinaryModifier TargetProperty="TotalIndustryCost"    Operation="Addition" Left="100" BinaryOperation="Multiplication" Right="$(Multiplier)" Path="../ClassShip" TooltipHidden="true"/>
   </SimulationDescriptor>
 
-  <SimulationDescriptor Name="ModuleSupportColonizationVenetian" Type="ModuleSupportColonization"/>
+  <SimulationDescriptor Name="ModuleSupportColonizationVenetian" Type="ModuleSupportColonization">
     <BinaryModifier TargetProperty="TotalIndustryCost"    Operation="Addition" Left="50" BinaryOperation="Multiplication" Right="$(Multiplier)" Path="../ClassShip" TooltipHidden="true"/>
+  </SimulationDescriptor>
   <SimulationDescriptor Name="ModuleSupportRecolonizer" Type="ModuleSupportColonization"/>
 
   <!-- ********************* -->
